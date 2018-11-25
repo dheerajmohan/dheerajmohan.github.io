@@ -1,0 +1,122 @@
+.main {
+	color: #ffffff;
+	background-image: url("../img/cm-t16-cover2.jpg");
+   	background-size: cover;
+   	background-repeat: no-repeat;
+   	width: 100%;	
+}
+
+
+@media only screen and (min-width: 768px) {
+
+
+.main{
+ 	width: 100%;
+ 	height: 550px;
+ }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+.main{
+ 			max-width: 100%;
+ 			height: 200px;
+            margin: auto;
+ }
+
+}
+
+.main-text {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.thumbnail:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: transparent;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+ 	margin-top: 20px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 0px;
+  width: auto;
+}
+
+.navbar li a, .navbar .navbar-brand{
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    background-color: #ffffff;
+    margin-top: 0px !important;
+    color: #000 !important;
+
+}
+
