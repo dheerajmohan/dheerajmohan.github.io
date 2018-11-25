@@ -15,8 +15,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Gudea|Cairo|Roboto|Roboto+Slab|Teko" rel="stylesheet">
+ 
     <link rel="stylesheet" href="css/footer.css">
-
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <!--	 
@@ -45,7 +46,7 @@
 	<section class="main text-center container-fluid">
 
 
-		<nav class="navbar navbar-default ">
+		<nav class="navbar navbar-default fill">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -57,11 +58,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a class="hvr-underline-from-center" href="#about">ABOUT</a></li>
+        <li><a class="hvr-underline-from-center"href="#portfolio">PORTFOLIO</a></li>
+        <li><a class="hvr-underline-from-center"href="#events">EVENTS</a></li>
+        <li><a class="hvr-underline-from-center"href="#team">THE TEAM</a></li>
+        <li><a class="hvr-underline-from-center"href="#team">CONTACT US</a></li>
       </ul>
     </div>
   </div>
@@ -78,19 +79,20 @@
 -->
 	</section>
 
-	<div class="container">
-		<div class="row" id="about">
+	<section id="about">
+        <div class="container">
+		<div class="row" style="margin: 40px 0px 40px 0px;">
 			<div class="col-sm-8">
 				<h2>
-					About Us
+					ABOUT US
 				</h2>
 				<p>
-			550Club Mathematica is one of the most eminent and actively functioning clubs of National Institute of Technology, Calicut. Our journey started in the year 2000 and since then we have been helping students to improve their skills in logic, reasoning and maths .Our events and activities manifest another level of mathematics beyond the academic level, which could help in achieving extra milestones in our future. We provide a marvellous platform for school as well as college students to unwrap their logical and reasoning skills and blossom their critical thinking.We also conduct regular mock tests for CAT,GATE and GMAT in our college to assist the aspiring students in their preparation. We join together with other clubs to host the Technical Week conducted exclusively for first years to enlighten and refresh their minds with challenging games and quizzes. 
+			Club Mathematica is one of the most eminent and actively functioning clubs of National Institute of Technology, Calicut. Our journey started in the year 2000 and since then we have been helping students to improve their skills in logic, reasoning and maths .Our events and activities manifest another level of mathematics beyond the academic level, which could help in achieving extra milestones in our future. We provide a marvellous platform for school as well as college students to unwrap their logical and reasoning skills and blossom their critical thinking.We also conduct regular mock tests for CAT,GATE and GMAT in our college to assist the aspiring students in their preparation. We join together with other clubs to host the Technical Week conducted exclusively for first years to enlighten and refresh their minds with challenging games and quizzes. 
 				</p>
 			</div>	
 			<div class="col-sm-4">
 				<span>
-					<img class="img-responsive" src="img/cm-logo-new.png" style="height: auto; width: 60%; filter: brightness(0%);">
+					<img class="img-responsive" src="img/cm-logo-new.png" style="height: auto; width: 80%; filter: brightness(0%); margin: 30px 30px;">
 				</span>
 			</div>	
 		<!--	<div class="text-center">
@@ -136,7 +138,49 @@
 		
 		</div>
 		-->
-</div>
+    </div>
+    </div>
+</section>
+    <section id="portfolio">
+        <div class="container">
+            <h2>PORTFOLIO</h2>
+        <div class="container mt-40" style="margin-top: -20px">
+            <div class="row mt-30">
+                <div class="col-md-4 col-sm-6">
+                    <div class="box7">
+                        <img src="img/infi18-cover.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">INFINITUM</h3>
+                            <span class="post">School level quizzing event</span>
+                            <div style="width: 30%; margin: 0 auto;"><button class="btn btn-success" style="background-color: #008080;">Learn more</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box7">
+                        <img src="img/locus'19-logo.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">LOCUS</h3>
+                            <span class="post">Annual Math Summit</span>
+                            <div style="width: 30%; margin: 0 auto;"><button class="btn btn-success" style="background-color: #008080;">Learn more</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box7">
+                        <img src="img/cm-tathva-cover.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">Tathva Stall</h3>
+                            <span class="post">Math stall during tech fest</span>
+                            <div style="width: 30%; margin: 0 auto;"><button class="btn btn-success" style="background-color: #008080;">Learn more</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </section>
 </div>
     <div id="myFooter" class="container-fluid">
         <div class="container-fluid">
@@ -177,15 +221,13 @@
                     <button type="button" class="btn btn-default">Contact us</button>
                 </div>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2016 Copyright Text </p>
+            <div class="row" style="text-align: center;"><p style="text-align: center; font-size: 1.2em ">© 2016 Copyright Text </p></div>
         </div>
     </div>
  <!--
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 -->
-
+    
 </body>
 </html>
