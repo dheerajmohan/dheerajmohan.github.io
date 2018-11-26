@@ -29,11 +29,10 @@ section {
 }
 
 .main {
-	color: #ffffff;
-	background-image: url("../img/cm-t16-cover2.jpg");
+	   color: #ffffff;
+	   background-image: url("../img/cm-t16-cover2.jpg");
    	background-size: cover;
    	background-repeat: no-repeat;
-   	width: 100%;	
 }
 
 
@@ -51,9 +50,10 @@ section {
 
 
 .main{
- 			min-width: 100%;
- 			min-height: 300px;
-      margin: auto;
+
+      background-image: url("../img/cm-t16-cover.jpg");
+ 			width: 100% !important;
+      height: 350px;
  }
 
 
@@ -182,24 +182,31 @@ nav.fill ul li a:hover:after {
 
 .navbar li a, .navbar .navbar-brand{
     color: #fff !important;
+
 }
 
+ .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #2f435e !important;
+      background-color: #dad4dd !important;
+  }
 
 .navbar-nav .navbar-nav li.active a {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0); 
+     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .navbar.solid {
-  background-color: #490D40;
+  margin-top: -5px;
+  padding: 15px 0px 15px 0px;
+  background-color: #2f435e;
   transition: background-color 1s ease 0s;
   box-shadow: 0 0 4px grey;
 
@@ -222,6 +229,37 @@ nav.fill ul li a:hover:after {
     } //end .navbar-nav
 
 }
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    background-color: #dad4dd;;
+    margin-top: 0px !important;
+    color: #000 !important;
+
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-2px, 4px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-2px, -5px);
+}
+
+
 
 
 .hvr-underline-from-center {
@@ -256,13 +294,7 @@ nav.fill ul li a:hover:after {
     left: 0;
     right: 0;
 }
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    background-color: transparent;
-    margin-top: 0px !important;
-    color: #000 !important;
 
-}
 
 
 

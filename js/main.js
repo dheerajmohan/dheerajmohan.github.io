@@ -48,6 +48,10 @@ $('#ChangeToggle').click(function () {
         $('#ChangeToggle').html('<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>'); 
     }
     else {      
-        $('#ChangeToggle').html('<span class="ToggleButton glyphicon glyphicon-remove"></span>'); 
+        $('#ChangeToggle').html('<span class="ToggleButton glyphicon glyphicon-envelope" style="color: #000; background-color: "#000";></span>'); 
     }
 });
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
