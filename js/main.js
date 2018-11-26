@@ -23,3 +23,31 @@ $(document).ready(function(){
     } // End if
   });
 })
+
+$(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 50) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+});
+
+$(function() {
+  $('#ChangeToggle').click(function() {
+    $('#navbar-hamburger').toggleClass('hidden');
+    $('#navbar-close').toggleClass('hidden');  
+  });
+});
+
+$('#ChangeToggle').click(function () {
+    if($('#ChangeToggle span').hasClass('ToggleButton')) {
+        $('#ChangeToggle').html('<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>'); 
+    }
+    else {      
+        $('#ChangeToggle').html('<span class="ToggleButton glyphicon glyphicon-remove"></span>'); 
+    }
+});

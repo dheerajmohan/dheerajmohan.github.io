@@ -46,14 +46,18 @@
 	<section class="main text-center container-fluid">
 
 
-		<nav class="navbar navbar-default fill">
+		<nav class="navbar navbar-default fill navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    
+      <button type="button" class="navbar-toggle" id="ChangeToggle" data-toggle="collapse" data-target="#myNavbar">
+        <div id="navbar-hamburger">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
+        </div>
       </button>
+    
       <a href="#" class="navbar-brand"><img src="img/cm-block-logo.png"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -144,7 +148,7 @@
 </section>
     <section id="portfolio">
         <div class="container">
-            <h2>PORTFOLIO</h2>
+            <h2 id="pf">PORTFOLIO</h2>
         <div class="container mt-40" style="margin-top: -20px">
             <div class="row mt-30">
                 <div class="col-md-4 col-sm-6">

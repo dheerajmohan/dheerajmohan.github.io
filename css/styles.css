@@ -18,7 +18,7 @@ p {
       top: 0;
       left: 0;
       width: 100%;
-      padding: 60px 0px 0px 80px;
+      padding: 20px 0px 20px 80px;
     }
 
 section {
@@ -51,8 +51,8 @@ section {
 
 
 .main{
- 			min-width-width: 100%;
- 			min-height: 200px;
+ 			min-width: 100%;
+ 			min-height: 300px;
       margin: auto;
  }
 
@@ -198,6 +198,31 @@ nav.fill ul li a:hover:after {
     overflow: hidden;
 }
 
+.navbar.solid {
+  background-color: #490D40;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+
+    .navbar-brand {
+      color: #C57ED3;
+      transition: color 1s ease 0s;
+    }
+
+    .navbar-nav {
+
+       > li {
+
+          > a {
+            color: #C57ED3;
+            transition: color 1s ease 0s;
+          }
+
+       } //end li
+
+    } //end .navbar-nav
+
+}
+
 
 .hvr-underline-from-center {
     display: inline-block;
@@ -233,7 +258,7 @@ nav.fill ul li a:hover:after {
 }
 .navbar-default .navbar-toggle {
     border-color: transparent;
-    background-color: #ffffff;
+    background-color: transparent;
     margin-top: 0px !important;
     color: #000 !important;
 
@@ -271,7 +296,7 @@ body{background-color:#f1f1f2}
 }
 
 
-.box7{position:relative; margin: 0px 0px 20px 0px; width: 100%; height: 100%}
+.box7{position:relative; margin: 0px 0px 20px 0px; width: 100%; height: 100%; border-radius: 10px;}
 .box7:after,.box7:before{width:100%;height:100%;background:rgba(11,33,47,.9);position:absolute;top:0;left:0;opacity:0;transition:all .5s ease 0s}
 .box7:after{background:rgba(255,255,255,.3);border:2px solid #0dab76;top:0;left:170%;opacity:1;z-index:1;transform:skewX(45deg);transition:all 1s ease 0s}
 .box7:hover:before{opacity:1}
@@ -286,5 +311,7 @@ body{background-color:#f1f1f2}
 .box7 .icon li a{display:block;width:35px;height:35px;line-height:35px;border-radius:50%;background:#0dab76;font-size:18px;color:#fff;margin-right:10px;transition:all .5s ease 0s}
 .box8 .icon li,.box8 .title{display:inline-block}
 .box7 .icon li a:hover{transform:rotate(360deg)}
-@media only screen and (max-width:990px){.box7{margin-left: -35px}
+@media only screen and (max-width:990px){
+  .box7{margin-left: -35px}
+  #pf {margin-left: -25px}
 }
